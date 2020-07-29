@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-jul-2020 23:09:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="trentinodb" name="Modelo.Promocion" optimistic-lock="version" table="promocion">
+    <id name="idPromocion" type="java.lang.Integer">
+      <column name="idPromocion"/>
+      <generator class="identity"/>
+    </id>
+    <property name="codigo" type="string">
+      <column length="45" name="codigo" not-null="true"/>
+    </property>
+    <property name="descuento" type="int">
+      <column name="descuento" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
